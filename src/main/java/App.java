@@ -1,6 +1,6 @@
 package main.java;
 
-import main.java.controller.EstoqueProduto;
+import main.java.controller.produtoController;
 import main.java.controller.FuncionarioController;
 import main.java.controller.VendaController;
 import main.java.model.Funcionario;
@@ -12,7 +12,7 @@ import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Produto Produto = new Produto("capinha", "tech", 30, 12);
+        Produto Produto = new Produto("capinha", "tech", 30, 12, 6);
         Funcionario funcionario = new Funcionario("paulo", "dev", "manha", LocalDate.of(2006, 11, 11), "123.123.123-12");
         Venda venda = new Venda(Produto, funcionario, "paulo", "pix");
         VendaController vendaController = new VendaController();
