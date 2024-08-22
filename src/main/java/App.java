@@ -17,19 +17,21 @@ public class App {
         Venda venda = new Venda(Produto, funcionario, "paulo", "pix");
         VendaController vendaController = new VendaController();
 
-        ArrayList<Venda> vendas = new ArrayList<>();
+        //ArrayList<Venda> vendas = new ArrayList<>();
 
-        vendas.add(venda);
+        //vendas.add(venda);
 
         //for(Venda v : vendas){
         //    vendaController.exibirVenda(v);
         //}
 
-        ArrayList<Produto> prods = new ArrayList<>();
-        prods.add(Produto);
-        prods.add(new Produto("earphone", "tech", 20, 34));
+        //ArrayList<Produto> prods = new ArrayList<>();
+        //prods.add(Produto);
+        //prods.add(new Produto("earphone", "tech", 20, 34));
 
-        EstoqueProduto ep = new EstoqueProduto();
-        ep.exibirEstoqueProduto(prods);
+        //EstoqueProduto ep = new EstoqueProduto();
+        //ep.exibirEstoqueProduto(prods);
+
+        vendaController.criarVenda(venda);
     }
 }

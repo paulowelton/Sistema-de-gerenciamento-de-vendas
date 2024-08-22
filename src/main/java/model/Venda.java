@@ -1,19 +1,19 @@
 package main.java.model;
 
-import java.time.LocalDate;
+import java.sql.Date;
 
 public class Venda {
     public Produto produto;
     public Funcionario funcionario;
     public String cliente,formaPagamento;
-    public LocalDate data;
+    public Date data;
 
     public Venda(Produto p, Funcionario f, String c, String fp){
         this.produto = p;
         this.funcionario = f;
         this.cliente = c;
         this.formaPagamento = fp;
-        this.data = LocalDate.now();
+        this.data = new Date(System.currentTimeMillis());
     }
 
     public Produto getProduto() {
@@ -46,6 +46,12 @@ public class Venda {
 
     public void setFormaPagamento(String formaPagamento) {
         this.formaPagamento = formaPagamento;
+    }
+    public Date getData(){
+        return data;
+    }
+    public void setData(Date data){
+        this.data = data;
     }
 
     
